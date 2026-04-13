@@ -7,6 +7,26 @@
 
 ---
 
+## How to Use This Kit
+
+Each agent file is a **prompt** — a set of instructions you paste into an AI chat tool to get a specialized advisor for your role.
+
+**Step 1 — Open an AI chat tool**
+Go to [claude.ai](https://claude.ai), [gemini.google.com](https://gemini.google.com), or [chatgpt.com](https://chatgpt.com). Start a new chat.
+
+**Step 2 — Open the agent file for your role**
+Find your file in the `agents/` folder. For example, if you're the Builder, open `agents/03-builder.md`.
+
+**Step 3 — Copy the entire file contents and paste it as your first message**
+Hit send. The AI will respond in character and guide you from there.
+
+**Step 4 — Have a conversation**
+Answer its questions. It will help you make decisions, break down tasks, and stay on track. Come back to it whenever you're stuck.
+
+> **Example:** The Builder opens `agents/03-builder.md`, pastes the whole thing into ChatGPT, and gets back a module breakdown for their project within seconds. Every time they hit a bug or don't know what to build next, they come back to the same chat.
+
+---
+
 ## The Fundamentals
 
 | Principle | What it means |
