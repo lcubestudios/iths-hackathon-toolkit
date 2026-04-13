@@ -54,7 +54,7 @@ A live weather app built during the workshop using the Open-Meteo API (no key re
 
 ## Team Doc
 
-[Google Doc Template](#) ← link coming
+[Google Doc Template](https://docs.google.com/document/d/1Gsiv3CezwR3mgMsjJqffGtKeJ7JWYz98vYXaU0DZcc4/edit?usp=sharing)
 
 ---
 
