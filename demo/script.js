@@ -29,8 +29,8 @@ async function renderChart(transformedData) {
   appDiv.innerHTML = ''; // Clear loading
 
   const canvas = document.createElement('canvas');
-  canvas.width = 400;
-  canvas.height = 300;
+  canvas.width = 800;
+  canvas.height = 400;
   appDiv.appendChild(canvas);
 
   const ctx = canvas.getContext('2d');
@@ -39,11 +39,11 @@ async function renderChart(transformedData) {
   const dataPoints = transformedData.map(d => d.temp);
 
   // Simple Bar Chart Logic
-  const barWidth = 10;
-  const gap = 2;
-  const startX = 50;
-  const startY = 250;
-  const scale = 5; // 5 pixels per degree
+  const barWidth = 25;
+  const gap = 8;
+  const startX = 40;
+  const startY = 320;
+  const scale = 8; // 5 pixels per degree
 
   ctx.font = "12px Arial";
 
@@ -53,18 +53,20 @@ async function renderChart(transformedData) {
     const height = temp * scale;
 
     // Draw Bar
-    ctx.fillStyle = 'rgba(0, 123, 255, 0.6)';
+    ctx.fillStyle = '#333';
     ctx.fillRect(x, y, barWidth, height);
 
     // Draw Label
     ctx.fillStyle = 'black';
-    ctx.fillText(temp.toFixed(1), x, y - 5);
+    ctx.fillText(temp.toFixed(0) + '°', x + 2, y - 10);
   });
 
-  // Draw X Axis Labels
+  // Draw X Axis Labels - ONLY EVERY 4 HOURS
   labels.forEach((label, index) => {
-    const x = startX + index * (barWidth + gap);
-    ctx.fillText(label, x, startY + 20);
+    if (index % 4 === 0) {
+      const x = startX + index * (barWidth + gap);
+      ctx.fillText(label, x, startY + 20);
+    }
   });
 
   function getTempLabel(temp) {
