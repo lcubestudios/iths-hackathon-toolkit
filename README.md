@@ -56,7 +56,13 @@ Paste each file into Gemini, Claude, or ChatGPT as your first message.
 
 ## Demo App — MeteoYork
 
-A live weather app built during the workshop using the Open-Meteo API (no key required). Source code in `/demo`.
+**MeteoYork** is a premium weather visualization app designed for New Yorkers. It focuses on transition and "Real Feel" rather than just basic metrics.
+
+- **Core Feature**: The "Real Feel" assessment (Freezing, Crisp, Comfortable, etc.) based on NYC microclimates.
+- **Visuals**: Apple-inspired cinematic UI with an animated 24-hour temperature curve.
+- **Tech**: Vanilla HTML, CSS, and ES6 Javascript. No build step required—just a browser.
+
+Source code and documentation are available in the [`/demo`](./demo) folder.
 
 ---
 
