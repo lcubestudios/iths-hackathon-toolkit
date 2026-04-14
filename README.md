@@ -60,9 +60,9 @@ A live weather app built during the workshop using the Open-Meteo API (no key re
 
 ---
 
-## Do / Don't
+## Dos / Don'ts
 
-| Do | Don't |
+| Dos | Don'ts |
 |----|-------|
 | Use the agent files to guide your workflow | Overthink or overindex an idea |
 | Stay within the defined scope | Allow scope creep |
