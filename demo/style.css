@@ -2,3 +2,18 @@ body {
   font-family: sans-serif;
   padding: 20px;
 }
+
+#app {
+  width: 100%;
+  max-width: 400px;
+  /* Perfect for mobile */
+  margin: 0 auto;
+}
+
+canvas {
+  width: 100%;
+  /* Stretch to fill container */
+  height: auto;
+  /* Keep aspect ratio */
+  display: block;
+}
